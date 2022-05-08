@@ -50,7 +50,10 @@ class _MyHomePageState extends State<MyHomePage> {
         endDrawer: const Drawer(child: Text("Right Drawer")),
         body: Column(children: [
           const Text("初めてのテキスト"),
-          const Text("初めてのテキスト2"),
+          Text(
+            '$_counter',
+            style: Theme.of(context).textTheme.headline4,
+          ),
           TextButton(
             onPressed: () => {print("test")},
             child: const Text("更新"),
@@ -77,6 +80,6 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ]),
         floatingActionButton: FloatingActionButton(
-            onPressed: () => {print("on press")}, child: Icon(Icons.timer)));
+            onPressed: _incrementCounter, child: const Icon(Icons.timer)));
   }
 }
