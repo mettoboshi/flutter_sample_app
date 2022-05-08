@@ -40,8 +40,10 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text(widget.title),
-        ),
+            title: Row(children: [
+          const Icon(Icons.create),
+          Text(widget.title),
+        ])),
         body: Column(children: [
           const Text("初めてのテキスト"),
           const Text("初めてのテキスト2"),
