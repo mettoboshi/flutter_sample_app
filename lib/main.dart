@@ -74,7 +74,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 size: 36.0,
               )
             ],
-          )
-        ]));
+          ),
+        ]),
+        floatingActionButton: FloatingActionButton(
+            onPressed: () => {print("on press")}, child: Icon(Icons.timer)));
   }
 }
