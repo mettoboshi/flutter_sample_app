@@ -44,6 +44,10 @@ class _MyHomePageState extends State<MyHomePage> {
           const Icon(Icons.create),
           Text(widget.title),
         ])),
+        drawer: const Drawer(
+          child: Center(child: Text("Drawer")),
+        ),
+        endDrawer: const Drawer(child: Text("Right Drawer")),
         body: Column(children: [
           const Text("初めてのテキスト"),
           const Text("初めてのテキスト2"),
