@@ -42,9 +42,13 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           title: Text(widget.title),
         ),
-        body: Column(children: const [
-          Text("初めてのテキスト"),
-          Text("初めてのテキスト2"),
+        body: Column(children: [
+          const Text("初めてのテキスト"),
+          const Text("初めてのテキスト2"),
+          TextButton(
+            onPressed: () => {print("test")},
+            child: const Text("更新"),
+          )
         ]));
   }
 }
